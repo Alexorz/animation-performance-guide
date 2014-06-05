@@ -1,0 +1,11 @@
+# Site settings
+title: Web动画性能指南
+description: "Animation performance guide book for the (mobile) web"
+email: your-email@domain.com
+username: Alexorz
+baseurl: ""
+url: "http://yourdomain.com"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
