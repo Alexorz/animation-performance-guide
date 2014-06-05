@@ -53,10 +53,13 @@ body {
   color:#373737;
   background: #212121;
   font-size: 16px;
-  font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
+  /* Font style from Lepture.com */
+  font-family: Georgia,"Xin Gothic","Hiragino Sans GB","Droid Sans Fallback","Microsoft YaHei",sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
+
+
 
 h1, h2, h3, h4, h5, h6 {
   margin: 10px 0;
@@ -360,6 +363,12 @@ Full-Width Styles
 
 #main_content {
   padding-top: 40px;
+  /* # Font style from Lepture.com */
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.62;
+  color: #444443;
+  /* / */
 }
 
 #footer_wrap {
