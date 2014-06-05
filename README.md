@@ -1,4 +1,3 @@
-animation-performance-guide
+动画性能指南 for the (mobile) web
 ===========================
 
-An animation performance guide book for the (mobile) web.
