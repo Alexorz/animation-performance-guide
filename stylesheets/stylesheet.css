@@ -204,13 +204,18 @@ ul, ol, dl {
 }
 
 ul {
-  list-style: inside;
-  padding-left: 20px;
+  list-style: outside;
+  padding-left: 35px;
+}
+ul ul {
+  list-style: outside;
+  list-style-type: circle;
+  padding-left: 35px;
 }
 
 ol {
-  list-style: decimal inside;
-  padding-left: 20px;
+  list-style: decimal outside;
+  padding-left: 35px;
 }
 
 dl dt {
@@ -429,4 +434,29 @@ Small Device Styles
     font-size: 11px;
   }
 
+}
+
+/* Fix jsfiddle */
+#tabs #result.tCont {
+    padding: 0;
+    display:block;
+}
+
+#main_content img {
+  max-width: 100%;
+  text-align: center;
+  border: 0;
+  box-shadow: none;
+}
+#main_content a {
+  color: #000;
+  text-decoration: none !important;
+  border-bottom: 1px dotted #000 !important;
+}
+#main_content a:hover {
+  border-bottom: 1px solid #000 !important;
+}
+
+#main_content h2 {
+  margin-top: 40px;
 }
