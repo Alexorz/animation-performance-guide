@@ -1,5 +1,4 @@
-动画性能指南 for the (mobile) web
+Web动画性能指南
 ===========================
 
-* 量化动画卡顿
-* 调试动画卡顿
+http://alexorz.github.io/animation-performance-guide/
