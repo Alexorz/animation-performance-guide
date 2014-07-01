@@ -1,10 +1,10 @@
 # Site settings
 title: Web动画性能指南
 description: "Animation performance guide book for the (mobile) web"
-email: your-email@domain.com
-username: Alexorz
+email: lee.alexorz@gmail.com
+username: Alexius Lee
 baseurl: ""
-url: "http://yourdomain.com"
+url: "https://github.com/alexorz"
 
 # Build settings
 markdown: kramdown

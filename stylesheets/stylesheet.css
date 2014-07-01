@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 10px 0;
   font-weight: 700;
   color:#222222;
-  font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
+  font-family: Helvetica,Arial,Georgia,"Xin Gothic","Hiragino Sans GB","Droid Sans Fallback","Microsoft YaHei",sans-serif;
   letter-spacing: -1px;
 }
 
@@ -210,7 +210,7 @@ ul {
 ul ul {
   list-style: outside;
   list-style-type: circle;
-  padding-left: 35px;
+  padding-left: 25px;
 }
 
 ol {
