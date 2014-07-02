@@ -133,7 +133,7 @@ layout: default
 借助Chrome和Safari的Timeline工具，分析耗时较长的帧，我们便能定位到渲染耗时长的原因，并针对问题原因寻找解决方案。
 
 * Chrome Timeline
-![Chrome Timeline](images/chrome-timeline-full.png)
+![Chrome Timeline](images/chrome-timeline-full-skitched.png)
 
 * Safari Timeline
 ![Safari Timeline](images/safari-timeline.png)
@@ -154,14 +154,14 @@ Chrome对各个层分别进行排版、绘图，再将绘图结果作为“[纹�
 
 ##### 通过工具“看到”层
 * Chrome
-![Chrome Layer](images/chrome-layer.png)
+![Chrome Layer](images/chrome-layer-skitched.png)
 
 
 * Safari
-![Safari Layer](images/safari-layer.png)
+![Safari Layer](images/safari-layer-skitched.png)
 
 ##### 通过分层减小重绘面积
-![Chrome Layer root](images/chrome-layer-paint.png)
+![Chrome Layer root](images/chrome-layer-paint-skitched.png)
 
 ##### 如何创建新的层
 从目前来看（Chrome、Safari等现代浏览器仍在不断迭代演进），以下情况下元素会创建自己的层（包括但不限于以下情况，待完善）：
