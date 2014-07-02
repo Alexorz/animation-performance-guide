@@ -145,7 +145,7 @@ layout: default
 近些年来，现代浏览器借助于显卡的优势改变了渲染操作：通常被笼统的称为“硬件加速(hardware acceleration)”。
 
 以Chrome为例，在硬件加速渲染通道下，复杂的页面会被分为多个层(Layer)，
-Chrome对各个层分别进行排版、绘图，再将绘图结果作为“纹理”上传至GPU，
+Chrome对各个层分别进行排版、绘图，再将绘图结果作为“[纹理](http://zh.wikipedia.org/wiki/纹理贴图)”上传至GPU，
 由GPU完成层的3D变换(transform)等操作，最后再将GPU渲染好的层图像进行复合操作(Compesite Layers)，得到最终的画面结果。
 因此，通过3D变换实现的位移、旋转、缩放将不会触发浏览器重绘（除非层的内容发生改变）。
 
