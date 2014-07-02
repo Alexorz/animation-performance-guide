@@ -1,7 +1,7 @@
 # A sample Guardfile
 # More info at https://github.com/guard/guard#readme
 
-guard 'jekyll' do
+guard 'jekyll', localeditmode: true, guardscript: "http://0.0.0.0:4444/livereload.js" do
   watch /.*/
   ignore /_site/
 end

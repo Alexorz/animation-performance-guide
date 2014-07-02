@@ -6,6 +6,7 @@
 </div>
 
 
-<!-- Guard reload: {{site.baseurl}}
-    <script src="http://0.0.0.0:4444/livereload.js"></script>
--->
+{% if site.localeditmode %}
+    <!-- Guard script under local edit mode. -->
+    <script src="{{site.guardscript}}"></script>
+{% endif %}

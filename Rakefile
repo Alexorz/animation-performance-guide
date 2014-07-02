@@ -1,6 +1,6 @@
 desc 'start server'
 task 'default' do
+  fork { sh 'jekyll serve -w' }
   fork { sh 'guard' }
-  fork { sh 'jekyll serve --watch' }
   Process.waitall
 end
