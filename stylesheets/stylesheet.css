@@ -313,6 +313,14 @@ Full-Width Styles
   text-shadow: #111 0px 0px 10px;
 }
 
+
+#project_title sup {
+  color: #999;
+  font-weight: normal;
+  font-size: 16px;
+  vertical-align: top;
+}
+
 #project_tagline {
   color: #fff;
   font-size: 24px;
@@ -401,7 +409,10 @@ Small Device Styles
   }
 
   #project_title {
-  font-size: 32px;
+    font-size: 32px;
+  }
+  #project_title sup {
+    font-size: 12px;
   }
 
   h1 {

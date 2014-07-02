@@ -239,4 +239,4 @@ Chrome对各个层分别进行排版、绘图，再将绘图结果作为“[纹�
 * [How (not) to trigger a layout in WebKit](http://gent.ilcore.com/2011/03/how-not-to-trigger-layout-in-webkit.html)
 * [Profiling Long Paint Times with DevTools' Continuous Painting Mode](http://updates.html5rocks.com/2013/02/Profiling-Long-Paint-Times-with-DevTools-Continuous-Painting-Mode)
 
-<!-- <script src="http://0.0.0.0:4444/livereload.js"></script> -->
+<script src="http://0.0.0.0:4444/livereload.js"></script>
