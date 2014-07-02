@@ -3,8 +3,7 @@ title: Web动画性能指南
 description: "Animation performance guide book for the (mobile) web"
 email: lee.alexorz@gmail.com
 username: Alexius Lee
-baseurl: ""
-url: "https://github.com/alexorz"
+usersite: "https://github.com/alexorz"
 
 # Build settings
 markdown: kramdown

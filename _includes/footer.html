@@ -1,6 +1,11 @@
 <div id="footer_wrap" class="outer">
   <footer class="inner">
-    <p class="copyright">{{ site.title }} maintained by <a href="{{ site.url }}" target="_blank">{{ site.username }}</a></p>
+    <p class="copyright">{{ site.title }} maintained by <a href="{{ site.url }}" target="_blank">{{ site.usersite }}</a></p>
     <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
   </footer>
 </div>
+
+{% if site.host == "0.0.0.0" %}
+    <!-- Guard reload -->
+    <script src="http://0.0.0.0:4444/livereload.js"></script>
+{% endif %}

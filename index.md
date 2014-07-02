@@ -69,7 +69,6 @@ layout: default
 
 * Chrome自带的帧率监测工具，用于侦听全局帧率，以及页面重绘耗时
 
-
 <p style="padding-left: 30px; vertical-align: top;">
 	<img src="images/chrome-fps-panel.png" style="vertical-align: top; margin-right: 20px;" height="71" width="185" alt="Chrome fps panel">
 	<img src="images/chrome-ms-panel.png"  style="vertical-align: top;" height="85" width="185" alt="Chrome ms panel">
@@ -133,9 +132,11 @@ layout: default
 借助Chrome和Safari的Timeline工具，分析耗时较长的帧，我们便能定位到渲染耗时长的原因，并针对问题原因寻找解决方案。
 
 * Chrome Timeline
+
 ![Chrome Timeline](images/chrome-timeline-full-skitched.png)
 
 * Safari Timeline
+
 ![Safari Timeline](images/safari-timeline.png)
 
 
@@ -154,10 +155,12 @@ Chrome对各个层分别进行排版、绘图，再将绘图结果作为“[纹�
 
 ##### 通过工具“看到”层
 * Chrome
+
 ![Chrome Layer](images/chrome-layer-skitched.png)
 
 
 * Safari
+
 ![Safari Layer](images/safari-layer-skitched.png)
 
 ##### 通过分层减小重绘面积
@@ -224,13 +227,13 @@ Chrome对各个层分别进行排版、绘图，再将绘图结果作为“[纹�
 
 ## 未完结
 
-
-
 <p>
-    本文仍在更新中，欢迎关注
-    <iframe src="http://alexorz.github.io/animation-performance-guide/github-btn/github-btn.html?user=alexorz&repo=animation-performance-guide&type=watch&count=true" style="vertical-align: middle; margin-top: -5px;" allowtransparency="true" frameborder="0" scrolling="0" width="120" height="20"></iframe>
+    本文仍在更新中，欢迎通过Github Watch关注更新动态
+    <iframe src="http://alexorz.github.io/animation-performance-guide/github-btn/github-btn.html?user=alexorz&repo=animation-performance-guide&type=watch&count=true" style="vertical-align: middle; margin-top: -5px; margin-left: 5px;" allowtransparency="true" frameborder="0" scrolling="0" width="120" height="20"></iframe>
 </p>
-有更多想法交流、建议、拍砖，[请戳这里](https://github.com/Alexorz/animation-performance-guide/issues/new)
+
+有更多想法，欢迎交流，想要拍砖、指正、提建议，[请戳这里](https://github.com/Alexorz/animation-performance-guide/issues/new)。
+
 
 ## 参考资料
 * [How Browsers Work: Behind the scenes of modern web browsers](http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/)
@@ -238,5 +241,3 @@ Chrome对各个层分别进行排版、绘图，再将绘图结果作为“[纹�
 * [Rendering: repaint, reflow/relayout, restyle](http://www.phpied.com/rendering-repaint-reflowrelayout-restyle/)
 * [How (not) to trigger a layout in WebKit](http://gent.ilcore.com/2011/03/how-not-to-trigger-layout-in-webkit.html)
 * [Profiling Long Paint Times with DevTools' Continuous Painting Mode](http://updates.html5rocks.com/2013/02/Profiling-Long-Paint-Times-with-DevTools-Continuous-Painting-Mode)
-
-<!-- <script src="http://0.0.0.0:4444/livereload.js"></script> -->
