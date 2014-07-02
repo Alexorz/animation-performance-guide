@@ -40,21 +40,21 @@ layout: default
 * 帧率稳定在60fps左右的流畅动画
 
 <div style="width: 300px; /* margin: 0 auto; */">
-    <iframe width="100%" height="200" src="http://fiddle.jshell.net/Alexorz/KqzeV/show/light/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+    <iframe class="matrix-iframe" width="100%" height="200" src="http://fiddle.jshell.net/Alexorz/KqzeV/show/light/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 </div>
 
 
 * 帧率稳定但低于30fps的卡顿动画（帧率低导致卡顿）
 
 <div style="width: 300px; /* margin: 0 auto; */">
-    <iframe width="100%" height="200" src="http://fiddle.jshell.net/Alexorz/KqzeV/show/light/?mode=lowfps" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+    <iframe class="matrix-iframe" width="100%" height="200" src="http://fiddle.jshell.net/Alexorz/KqzeV/show/light/?mode=lowfps" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 </div>
 
 
 * 平均帧率高，但存在跳帧现象的卡顿动画（帧率不稳定导致卡顿）
 
 <div style="width: 300px; /* margin: 0 auto; */">
-    <iframe width="100%" height="200" src="http://fiddle.jshell.net/Alexorz/KqzeV/show/light/?mode=jumpframe" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+    <iframe class="matrix-iframe" width="100%" height="200" src="http://fiddle.jshell.net/Alexorz/KqzeV/show/light/?mode=jumpframe" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 </div>
 
 
@@ -241,3 +241,77 @@ Chrome对各个层分别进行排版、绘图，再将绘图结果作为“[纹�
 * [Rendering: repaint, reflow/relayout, restyle](http://www.phpied.com/rendering-repaint-reflowrelayout-restyle/)
 * [How (not) to trigger a layout in WebKit](http://gent.ilcore.com/2011/03/how-not-to-trigger-layout-in-webkit.html)
 * [Profiling Long Paint Times with DevTools' Continuous Painting Mode](http://updates.html5rocks.com/2013/02/Profiling-Long-Paint-Times-with-DevTools-Continuous-Painting-Mode)
+
+
+<script>
+// Toggle show/hide matrix demo, for smoothly scrolling.
+(function(){
+    var matrices = document.getElementsByClassName('matrix-iframe');
+    var winHeight;
+    var buffer = 50;
+
+    function pauseMatrix ( matrix ){
+        matrix.src = matrix.src.replace(/^(.+?)(#.*)?$/,'$1#pause');
+    }
+
+    function resumeMatrix ( matrix ){
+        matrix.src = matrix.src.replace('#pause','#resume');
+    }
+
+    function checkPause ( matrix, scrollY, winHeight ){
+        var mtxClientY = matrix.getBoundingClientRect().top;
+        var mtxHeight = matrix.offsetHeight;
+
+        if ( mtxClientY > 0 - mtxHeight && mtxClientY < winHeight ) {
+            if ( matrix.paused ) {
+                resumeMatrix( matrix );
+                matrix.paused = false;
+            }
+        }
+        else {
+            if ( !matrix.paused ) {
+                pauseMatrix( matrix );
+                matrix.paused = true;
+            }
+        }
+    }
+
+    function resizeHandler ( ){
+        winHeight = window.innerHeight;
+    }
+
+    function scrollHandler ( e ){
+        var scrollY = window.scrollY;
+        for( var i = 0, l = matrices.length; i<l; i++ ) {
+            checkPause( matrices[i], scrollY, winHeight );
+        }
+    }
+
+    // Detect window height changing.
+    var resizeDelay;
+    window.onresize = function(){
+        clearTimeout(resizeDelay);
+        resizeDelay = setTimeout(function(){
+            resizeHandler();
+            scrollHandler();
+        }, 300);
+    };
+
+    // Detect scroll.
+    window.onscroll = scrollHandler;
+
+    // Check pause directly.
+    resizeHandler();
+    scrollHandler();
+
+    // Check pause on iframe loaded.
+    var delay;
+    for( var i = 0, l = matrices.length; i<l; i++ ) {
+        matrices[i].onload = function(){
+            clearTimeout(delay);
+            delay = setTimeout(scrollHandler, 100);
+        };
+    }
+
+})();
+</script>
