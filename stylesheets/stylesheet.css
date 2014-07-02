@@ -376,12 +376,10 @@ Full-Width Styles
 
 #main_content {
   padding-top: 40px;
-  /* # Font style from Lepture.com */
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.62;
-  color: #444443;
-  /* / */
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
 }
 
 #footer_wrap {
