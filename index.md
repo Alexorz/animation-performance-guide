@@ -223,8 +223,14 @@ Chrome对各个层分别进行排版、绘图，再将绘图结果作为“纹�
 // To be done.
 
 ## 未完结
-本文仍在更新中，有更多想法交流、建议、拍砖，[请戳这里](https://github.com/Alexorz/animation-performance-guide/issues/new)
 
+
+
+<p>
+    本文仍在更新中，欢迎关注：
+    <iframe src="http://alexorz.github.io/animation-performance-guide/github-btn/github-btn.html?user=alexorz&repo=animation-performance-guide&type=watch&count=true" style="vertical-align: middle; margin-top: -5px;" allowtransparency="true" frameborder="0" scrolling="0" width="120" height="20"></iframe>
+</p>
+有更多想法交流、建议、拍砖，[请戳这里](https://github.com/Alexorz/animation-performance-guide/issues/new)
 
 ## 参考资料
 * [How Browsers Work: Behind the scenes of modern web browsers](http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/)
