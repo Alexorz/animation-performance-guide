@@ -238,6 +238,7 @@ Chrome对各个层分别进行排版、绘图，再将绘图结果作为“[纹�
 ## 参考资料
 * [How Browsers Work: Behind the scenes of modern web browsers](http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/)
 * [Accelerated Rendering in Chrome](http://www.html5rocks.com/zh/tutorials/speed/layers/)
+* [Performance profiling with the Timeline](https://developer.chrome.com/devtools/docs/timeline)
 * [Rendering: repaint, reflow/relayout, restyle](http://www.phpied.com/rendering-repaint-reflowrelayout-restyle/)
 * [How (not) to trigger a layout in WebKit](http://gent.ilcore.com/2011/03/how-not-to-trigger-layout-in-webkit.html)
 * [Profiling Long Paint Times with DevTools' Continuous Painting Mode](http://updates.html5rocks.com/2013/02/Profiling-Long-Paint-Times-with-DevTools-Continuous-Painting-Mode)
