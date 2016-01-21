@@ -11,7 +11,6 @@ layout: default
 * [量化动画的流畅程度](#quantify-performance)
 * [了解浏览器的渲染机制](#how-browser-works)
 * [动画调优的策略与技巧](#ploy-and-skills)
-* [案例调优实战](#cases)
 
 
 ## 量化动画的流畅程度<quantify-performance>
@@ -170,8 +169,7 @@ Chrome对各个层分别进行排版、绘图，再将绘图结果作为“[纹�
 从目前来看（Chrome、Safari等现代浏览器仍在不断迭代演进），以下情况下元素会创建自己的层（包括但不限于以下情况，待完善）：
 
 * 触发普通元素的分层：
-    * transform:translate3d或perspective(透视)属性
-    * position:fixed属性
+    * transform:translate3d属性（如`transform:translateZ(0)`）
 
 * 自带单独分层的元素
     * 使用加速视频解码的&lt;video&gt;元素
@@ -221,11 +219,6 @@ Chrome对各个层分别进行排版、绘图，再将绘图结果作为“[纹�
 * **避开浏览器的渲染Bug**
     * 不建议异步载入CSS：Webkit系浏览器中，异步载入CSS文件会使页面渲染停顿（页面中存在持续pending的CSS请求时十分明显）。
 -->
-
-## 案例调优实战<cases>
-// To be done.
-
-## 未完结
 
 <p>
     本文仍在更新中，欢迎通过Github Watch关注更新动态
