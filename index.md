@@ -91,7 +91,7 @@ layout: default
 
 
 ps: 或许有同学会有疑问：为什么电影/电视的帧率小于30fps，但依然感觉很流畅？
-这个问题可以参阅![这条知乎回答](https://www.zhihu.com/question/21081976#answer-9265972)
+这个问题可以参阅[这条知乎回答](https://www.zhihu.com/question/21081976#answer-9265972)
 
 因此，准确来说，前面所说的最佳帧率60fps，以及帧率小于30fps的动画出现卡顿感觉，前提是动画中没有加入模糊等特效。
 
